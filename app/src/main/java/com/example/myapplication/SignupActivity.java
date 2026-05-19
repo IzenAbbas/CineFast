@@ -113,12 +113,12 @@ public class SignupActivity extends AppCompatActivity {
                         user.sendEmailVerification()
                             .addOnCompleteListener(task -> {
                                 if (task.isSuccessful()) {
-                                    Toast.makeText(getApplicationContext(),
+                                    Toast.makeText(getApplicationContext(), 
                                         "Verification email sent. Please check your inbox.", Toast.LENGTH_SHORT).show();
                                     auth.signOut();
                                     finish(); // Go back to login
                                 } else {
-                                    Toast.makeText(getApplicationContext(),
+                                    Toast.makeText(getApplicationContext(), 
                                         "Error sending verification email.", Toast.LENGTH_SHORT).show();
                                 }
                             });
