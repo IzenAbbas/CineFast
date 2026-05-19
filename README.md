@@ -1,6 +1,6 @@
 # CineFAST
 
-**Latest commit:** [`b2def67`](https://github.com/IzenAbbas/CineFast/commit/b2def671054339761a43b3fec1607b9cd6e17821) — onboarding_rectangles.png issue resolved + Readme updated. (2026-05-20)
+**Latest commit:** [`398baa4`](https://github.com/IzenAbbas/CineFast/commit/398baa4) — Merge remote changes. (2026-05-20)
 
 CineFAST is an Android movie-booking app built with Java, AndroidX, Material components, and Firebase. It guides users through a simple cinema experience: splash screen, onboarding, account creation or login, movie browsing, seat selection, snack ordering, and booking confirmation.
 
