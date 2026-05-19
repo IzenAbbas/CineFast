@@ -1,7 +1,5 @@
 # CineFAST
 
-**Latest commit:** [`79885da`](https://github.com/IzenAbbas/CineFast/commit/79885da) — Update README with correct latest commit hash. (2026-05-20)
-
 CineFAST is an Android movie-booking app built with Java, AndroidX, Material components, and Firebase. It guides users through a simple cinema experience: splash screen, onboarding, account creation or login, movie browsing, seat selection, snack ordering, and booking confirmation.
 
 The project is organized as a single Android application module and includes a prebuilt APK artifact for quick installation and review.
