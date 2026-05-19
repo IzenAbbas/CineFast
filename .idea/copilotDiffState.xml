@@ -21,6 +21,14 @@
             </PendingDiffInfo>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/drawable/onboarding_rectangles.xml">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/app/src/main/res/drawable/onboarding_rectangles.xml" />
+              <option name="updatedContent" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&#10;&lt;layer-list xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;&gt;&#10;    &lt;!-- Base background --&gt;&#10;    &lt;item android:drawable=&quot;@android:color/black&quot; /&gt;&#10;    &#10;    &lt;!-- Decorative rectangles pattern --&gt;&#10;    &lt;item&gt;&#10;        &lt;shape android:shape=&quot;rectangle&quot;&gt;&#10;            &lt;solid android:color=&quot;#1A1A1A&quot; /&gt;&#10;        &lt;/shape&gt;&#10;    &lt;/item&gt;&#10;    &#10;    &lt;!-- Top-left accent rectangle --&gt;&#10;    &lt;item&#10;        android:width=&quot;200dp&quot;&#10;        android:height=&quot;200dp&quot;&#10;        android:gravity=&quot;top|left&quot;&gt;&#10;        &lt;shape android:shape=&quot;rectangle&quot;&gt;&#10;            &lt;solid android:color=&quot;#FF0000&quot; /&gt;&#10;        &lt;/shape&gt;&#10;    &lt;/item&gt;&#10;    &#10;    &lt;!-- Bottom-right accent rectangle --&gt;&#10;    &lt;item&#10;        android:width=&quot;150dp&quot;&#10;        android:height=&quot;150dp&quot;&#10;        android:gravity=&quot;bottom|right&quot;&gt;&#10;        &lt;shape android:shape=&quot;rectangle&quot;&gt;&#10;            &lt;solid android:color=&quot;#FF0000&quot; /&gt;&#10;        &lt;/shape&gt;&#10;    &lt;/item&gt;&#10;&lt;/layer-list&gt;&#10;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
           <value>
             <PendingDiffInfo>
