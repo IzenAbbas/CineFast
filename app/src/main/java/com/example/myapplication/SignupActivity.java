@@ -13,6 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.auth.FirebaseUser;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -107,8 +108,21 @@ public class SignupActivity extends AppCompatActivity {
         usersReference.child(userId)
                 .setValue(userMap)
                 .addOnSuccessListener(unused -> {
-                    sessionManager.setLoggedIn(true);
-                    openMainScreen();
+                    FirebaseUser user = auth.getCurrentUser();
+                    if (user != null) {
+                        user.sendEmailVerification()
+                            .addOnCompleteListener(task -> {
+                                if (task.isSuccessful()) {
+                                    Toast.makeText(getApplicationContext(),
+                                        "Verification email sent. Please check your inbox.", Toast.LENGTH_SHORT).show();
+                                    auth.signOut();
+                                    finish(); // Go back to login
+                                } else {
+                                    Toast.makeText(getApplicationContext(),
+                                        "Error sending verification email.", Toast.LENGTH_SHORT).show();
+                                }
+                            });
+                    }
                 })
                 .addOnFailureListener(e -> Toast.makeText(this, getString(R.string.user_save_failed, getErrorMessage(e)), Toast.LENGTH_LONG).show());
     }

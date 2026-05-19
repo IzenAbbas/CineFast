@@ -12,4 +12,5 @@
     <color name="accent_blue">#2F54FF</color>
     <color name="text_primary">#F6F7FB</color>
     <color name="text_secondary">#9AA4B2</color>
+    <color name="success_green">#12D835</color>
 </resources>

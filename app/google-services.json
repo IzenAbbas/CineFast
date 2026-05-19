@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "304959669914",
+    "firebase_url": "https://cinefast-4beb0-default-rtdb.firebaseio.com",
     "project_id": "cinefast-4beb0",
     "storage_bucket": "cinefast-4beb0.firebasestorage.app"
   },
@@ -12,7 +13,20 @@
           "package_name": "com.example.myapplication"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "304959669914-iqvv58v0pqa97uvsfa0vnq6idv6iu930.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.myapplication",
+            "certificate_hash": "2a3030d610eb78f5f2915ec7a5e00a5d33a8c6e7"
+          }
+        },
+        {
+          "client_id": "304959669914-gm5btnth003hcuhc3lr7j6p7v8kb9q1l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyC8bxpIz0baUNCZXd9vsTUmOvmH0EgyTEk"
@@ -20,7 +34,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "304959669914-gm5btnth003hcuhc3lr7j6p7v8kb9q1l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }

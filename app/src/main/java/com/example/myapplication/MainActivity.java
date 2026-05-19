@@ -7,6 +7,7 @@ import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.GravityCompat;
@@ -96,10 +97,17 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void logout() {
-        FirebaseAuth.getInstance().signOut();
-        SessionManager sessionManager = new SessionManager(this);
-        sessionManager.clearSession();
-        openLoginScreen();
+        new AlertDialog.Builder(this)
+                .setTitle(R.string.logout_confirm_title)
+                .setMessage(R.string.logout_confirm_message)
+                .setPositiveButton(R.string.yes, (dialog, which) -> {
+                    FirebaseAuth.getInstance().signOut();
+                    SessionManager sessionManager = new SessionManager(this);
+                    sessionManager.clearSession();
+                    openLoginScreen();
+                })
+                .setNegativeButton(R.string.no, null)
+                .show();
     }
 
     public void openDrawer() {

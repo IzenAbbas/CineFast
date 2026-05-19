@@ -52,4 +52,11 @@
     <string name="menu_home">Home</string>
     <string name="menu_my_bookings">My Bookings</string>
     <string name="menu_last_booking">Last Booking</string>
+    <string name="logout_confirm_title">Logout</string>
+    <string name="logout_confirm_message">Are you sure you want to logout?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="continue_with_google">Continue with Google</string>
+    <string name="google_logo_desc">Google logo</string>
+    <string name="or_separator">OR</string>
 </resources>
